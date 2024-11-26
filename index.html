@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2664442776.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Web developer</p>
+          <h1>Hi, I'm <span>Cyle</span><br />Knoren From Cape Town</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/background 3.png.jpg.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a budding software developer, eager to make my mark in the
+              tech world. Currently deep into a full-stack web development
+              course at Hyperion Dev, I'm swiftly gaining proficiency in a range
+              of programming languages and technologies. Despite my brief
+              tenure, my passion for technology, games, and development has been
+              a lifelong driving force. With aspirations to delve into game
+              development and cloud engineering, I'm fueled by the prospect of
+              creating immersive experiences and architecting cutting-edge
+              solutions. While my journey is just beginning, my dedication to
+              learning and growth knows no bounds. I'm driven by a relentless
+              curiosity and an unwavering commitment to excellence. Through
+              every line of code, I'm inching closer to realizing my dreams and
+              leaving a lasting impact on the industry.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p> 
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">Education</p>            
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full-Stack Web Developer</span><br/>Web app development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br/>None - Full Stack Web Developer
+                  Training at HyperionDev
+                </li>
+                </li>
+                <li>
+                  <span>2024 - Current</span><br/>None - Software Engineering Training at
+                  HyperionDev
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br/>Full Stack Web Developer
+                  Training at HyperionDev
+                <li>
+                  <span>2024</span><br/>Software Engineering Training
+                  at HyperionDev
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------Services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Building websites from scratch using programming languages such as
+              HTML, CSS, and JavaScript
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Ensuring that the user experience for individuals using websites
+              or applications is as efficient and satisfying as possible
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Applications Developer</h2>
+            <p>
+              Translate software requirements into workable programming code and
+              maintain and develop programs for use in business
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------ Portfolio ------------ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <div id="mealOrderTrigger" class="work">
+              <img src="Images/work-3.png" />
+              <div class="layer">
+                <h3>Web development/Meal mealOrdering</h3>
+                <p>Unique Website Designs that you might need</p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                 ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" />
+            <div class="layer">
+              <h3>UX/UI Designs</h3>
+              <p>Sorry! No Designs available yet</p>
+              <a href="#"><i class="fa-regular fa-face-frown"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-1.png" />
+            <div class="layer">
+              <h3>Applications</h3>
+              <p>Sorry! No Applications available yet</p>
+              <a href="#"><i class="fa-regular fa-face-frown"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--<a href="#" class="btn">See more</a>-->
+      </div>
+    </div>
+
+    <!-- ------------ Contact ------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Images/" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright"></div>
+      <p>Copyright @ Cyle. Made with Visual Studio Code.</p>
+    </div>
+
+    <!-- ------------ Javascript ------------ -->
+    <script src="profile.js"></script>
+    <script src="mealOrdering.js"></script>
+  </body>
+</html>
